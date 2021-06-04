@@ -1,0 +1,4 @@
+include ':YandexMaps'
+include ':GoogleMaps'
+include ':app'
+rootProject.name = "Laboratory1"
