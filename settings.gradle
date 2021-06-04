@@ -1,3 +1,5 @@
+include ':YandexDriver'
+include ':YandexMapsn'
 include ':YandexMaps'
 include ':GoogleMaps'
 include ':app'

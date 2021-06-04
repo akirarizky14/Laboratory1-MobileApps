@@ -12,7 +12,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/GoogleMaps" />
+            <option value="$PROJECT_DIR$/YandexDriver" />
             <option value="$PROJECT_DIR$/YandexMaps" />
+            <option value="$PROJECT_DIR$/YandexMapsn" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
