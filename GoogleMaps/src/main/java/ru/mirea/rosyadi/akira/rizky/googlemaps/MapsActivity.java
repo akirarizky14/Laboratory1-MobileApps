@@ -59,6 +59,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .newCameraPosition(cameraPosition));
         mMap.addMarker(new MarkerOptions().title("МИРЭА")
                 .snippet("Крупнейший политехнический ВУЗ").position(mirea));
+
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mirea));
         // добавление кнопки определения местоположения
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
@@ -74,6 +75,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.setTrafficEnabled(true);
 
     }
+
+
     @SuppressLint("MissingPermission")
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -86,6 +89,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
     @Override
     public void onMapClick(LatLng latLng) {
+
         CameraPosition cameraPosition = new CameraPosition.Builder().target(
                 latLng).zoom(12).build();
         mMap.animateCamera(CameraUpdateFactory
@@ -93,7 +97,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().title("Где я?")
                 .snippet("Новое место").position(latLng));
         // добавление кнопки определения местоположения
-
     }
 
 }
